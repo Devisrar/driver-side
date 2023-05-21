@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "732529435880",
+    "firebase_url": "https://uber-ola-and-indriver-clone-default-rtdb.firebaseio.com",
+    "project_id": "uber-ola-and-indriver-clone",
+    "storage_bucket": "uber-ola-and-indriver-clone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732529435880:android:2effd05346f5c54852955d",
+        "android_client_info": {
+          "package_name": "com.muhammadali.driversapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "732529435880-spqb1nhv376agn7oien2spppcbjhbenh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPUUDcMdPvS0hL3KmOkF03S771SS1uamU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "732529435880-spqb1nhv376agn7oien2spppcbjhbenh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
