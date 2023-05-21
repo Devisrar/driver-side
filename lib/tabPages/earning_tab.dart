@@ -1,8 +1,11 @@
-import 'package:drivers_app/assistants/assistant_methods.dart';
-import 'package:drivers_app/infoHandler/app_info.dart';
-import 'package:drivers_app/mainScreens/trips_history_screen.dart';
+// import 'package:drivers_app/assistants/assistant_methods.dart';
+// import 'package:drivers_app/infoHandler/app_info.dart';
+// import 'package:drivers_app/mainScreens/trips_history_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import '../infoHandler/app_info.dart';
+import '../mainScreens/trips_history_screen.dart';
 
 
 class EarningsTabPage extends StatefulWidget {

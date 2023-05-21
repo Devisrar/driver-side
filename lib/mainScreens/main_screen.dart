@@ -1,8 +1,13 @@
-import 'package:drivers_app/tabPages/earning_tab.dart';
-import 'package:drivers_app/tabPages/home_tab.dart';
-import 'package:drivers_app/tabPages/profile_tab.dart';
-import 'package:drivers_app/tabPages/ratings_tab.dart';
+// import 'package:drivers_app/tabPages/earning_tab.dart';
+// import 'package:drivers_app/tabPages/home_tab.dart';
+// import 'package:drivers_app/tabPages/profile_tab.dart';
+// import 'package:drivers_app/tabPages/ratings_tab.dart';
 import 'package:flutter/material.dart';
+
+import '../tabPages/earning_tab.dart';
+import '../tabPages/home_tab.dart';
+import '../tabPages/profile_tab.dart';
+import '../tabPages/ratings_tab.dart';
 
 class MainScreen extends StatefulWidget
 {

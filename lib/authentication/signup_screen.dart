@@ -1,11 +1,16 @@
-import 'package:drivers_app/authentication/car_info_screen.dart';
-import 'package:drivers_app/authentication/login_screen.dart';
-import 'package:drivers_app/global/global.dart';
-import 'package:drivers_app/widgets/progress_dialog.dart';
+// import 'package:drivers_app/authentication/car_info_screen.dart';
+// import 'package:drivers_app/authentication/login_screen.dart';
+// import 'package:drivers_app/global/global.dart';
+// import 'package:drivers_app/widgets/progress_dialog.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+
+import '../global/global.dart';
+import '../widgets/progress_dialog.dart';
+import 'car_info_screen.dart';
+import 'login_screen.dart';
 
 
 class SignUpScreen extends StatefulWidget

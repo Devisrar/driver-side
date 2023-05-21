@@ -1,7 +1,8 @@
-import 'package:drivers_app/global/global.dart';
+// import 'package:drivers_app/global/global.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../global/global.dart';
 import '../widgets/info_design_ui.dart';
 
 

@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:drivers_app/global/global.dart';
-import 'package:drivers_app/models/user_ride_request_information.dart';
-import 'package:drivers_app/widgets/fare_amount_collection_dialog.dart';
+// import 'package:drivers_app/global/global.dart';
+// import 'package:drivers_app/models/user_ride_request_information.dart';
+// import 'package:drivers_app/widgets/fare_amount_collection_dialog.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
@@ -11,6 +11,9 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 import '../assistants/assistant_methods.dart';
 import '../assistants/black_theme_google_map.dart';
+import '../global/global.dart';
+import '../models/user_ride_request_information.dart';
+import '../widgets/fare_amount_collection_dialog.dart';
 import '../widgets/progress_dialog.dart';
 
 
