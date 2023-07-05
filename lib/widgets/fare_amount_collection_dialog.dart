@@ -42,7 +42,7 @@ class _FareAmountCollectionDialogState extends State<FareAmountCollectionDialog>
             const SizedBox(height: 20,),
 
             Text(
-              "Trip Fare Amount " + "(" + driverVehicleType!.toUpperCase() + ")",
+              "Ambulance Fare Amount " + "(" + driverVehicleType!.toUpperCase() + ")",
               style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.grey,
@@ -73,7 +73,7 @@ class _FareAmountCollectionDialogState extends State<FareAmountCollectionDialog>
             const Padding(
               padding: EdgeInsets.all(8.0),
               child: Text(
-                "This is the total trip amount, Please it Collect from user.",
+                "This is the total Ambulance amount, Please it Collect from user.",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.grey,

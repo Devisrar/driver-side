@@ -73,7 +73,7 @@ class _EarningsTabPageState extends State<EarningsTabPage> {
                   children: [
 
                     Image.asset(
-                      "images/car_logo.png",
+                      "images/amb.png",
                       width: 100,
                     ),
 
@@ -82,7 +82,7 @@ class _EarningsTabPageState extends State<EarningsTabPage> {
                     ),
 
                     const Text(
-                      "Trips Completed",
+                      "Patient requests Completed",
                       style: TextStyle(
                         color: Colors.black54,
                       ),

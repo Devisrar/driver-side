@@ -96,7 +96,7 @@ class PushNotificationSystem
       }
       else
       {
-        Fluttertoast.showToast(msg: "This Ride Request Id do not exists.");
+        Fluttertoast.showToast(msg: "This Ambulance  Request Id do not exists.");
       }
     });
   }

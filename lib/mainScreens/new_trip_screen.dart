@@ -504,7 +504,7 @@ class _NewTripScreenState extends State<NewTripScreen>
                               .set(rideRequestStatus);
 
                           setState(() {
-                            buttonTitle = "End Trip"; //end the trip
+                            buttonTitle = "End Ambulance"; //end the trip
                             buttonColor = Colors.redAccent;
                           });
                         }
