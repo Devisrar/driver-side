@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -49,21 +46,34 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyD1Z8q9IUlDEdfrFWe4bohzqfdgyKa3nq8',
+    appId: '1:546096928466:web:3f9fa61d2493f18c67ff0b',
+    messagingSenderId: '546096928466',
+    projectId: 'zilifesaver',
+    authDomain: 'zilifesaver.firebaseapp.com',
+    databaseURL: 'https://zilifesaver-default-rtdb.firebaseio.com',
+    storageBucket: 'zilifesaver.appspot.com',
+    measurementId: 'G-GXMZFXNR9G',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDwhqft4_pkrfSwux7tfFT0RnFywgRINA4',
-    appId: '1:568452383345:android:5b03546ec373a97eb451d0',
-    messagingSenderId: '568452383345',
-    projectId: 'driverapp-59896',
-    storageBucket: 'driverapp-59896.appspot.com',
+    apiKey: 'AIzaSyCxgb704juxjT2fLIQ03F76j6hWxcElR7g',
+    appId: '1:546096928466:android:f4c64c0d9a737f5567ff0b',
+    messagingSenderId: '546096928466',
+    projectId: 'zilifesaver',
+    databaseURL: 'https://zilifesaver-default-rtdb.firebaseio.com',
+    storageBucket: 'zilifesaver.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBT2POkbh2d5txBaghAVkLUBm0cIlk_lVk',
-    appId: '1:568452383345:ios:4f77a88d15201e8cb451d0',
-    messagingSenderId: '568452383345',
-    projectId: 'driverapp-59896',
-    storageBucket: 'driverapp-59896.appspot.com',
-    iosClientId: '568452383345-be3leova55blf1ndg6th6mg8fq4e802m.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBAu_UaFSuK909C6hRtRRdZk3uIbANZrTU',
+    appId: '1:546096928466:ios:273b6b289124cd6067ff0b',
+    messagingSenderId: '546096928466',
+    projectId: 'zilifesaver',
+    databaseURL: 'https://zilifesaver-default-rtdb.firebaseio.com',
+    storageBucket: 'zilifesaver.appspot.com',
+    iosClientId: '546096928466-co54t9apub7nojhsplj7mlc2elbj5hj3.apps.googleusercontent.com',
     iosBundleId: 'com.example.driverSide',
   );
 }
