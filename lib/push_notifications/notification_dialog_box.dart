@@ -53,7 +53,7 @@ class _NotificationDialogBoxState extends State<NotificationDialogBox>
             const SizedBox(height: 14,),
 
             Image.asset(
-              "images/car_logo.png",
+              "images/amb.png",
               width: 160,
             ),
 
@@ -61,7 +61,7 @@ class _NotificationDialogBoxState extends State<NotificationDialogBox>
 
             //title
             const Text(
-              "New Ride Request",
+              "New Ambulance Request",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 22,
@@ -175,7 +175,7 @@ class _NotificationDialogBoxState extends State<NotificationDialogBox>
                             .remove();
                       }).then((value)
                       {
-                        Fluttertoast.showToast(msg: "Ride Request has been Cancelled, Successfully. Restart App Now.");
+                        Fluttertoast.showToast(msg: "Ambulance Request has been Cancelled, Successfully. Restart App Now.");
                       });
 
                       Future.delayed(const Duration(milliseconds: 3000), ()

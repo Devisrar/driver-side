@@ -21,7 +21,7 @@ class _CarInfoScreenState extends State<CarInfoScreen>
   TextEditingController carNumberTextEditingController = TextEditingController();
   TextEditingController carColorTextEditingController = TextEditingController();
 
-  List<String> carTypesList = ["uber-x", "uber-go", "bike"];
+  List<String> carTypesList = ["Large-Ambulance", "Normal-Ambulance", "small-Ambulance"];
   String? selectedCarType;
 
 
@@ -56,13 +56,13 @@ class _CarInfoScreenState extends State<CarInfoScreen>
 
               Padding(
                 padding: const EdgeInsets.all(20.0),
-                child: Image.asset("images/logo1.png"),
+                child: Image.asset("images/amb.png"),
               ),
 
               const SizedBox(height: 10,),
 
               const Text(
-                "Write Car Details",
+                "Write Ambulance Details",
                 style: TextStyle(
                   fontSize: 26,
                   color: Colors.grey,
@@ -70,77 +70,86 @@ class _CarInfoScreenState extends State<CarInfoScreen>
                 ),
               ),
 
-              TextField(
-                controller: carModelTextEditingController,
-                style: const TextStyle(
-                    color: Colors.grey
-                ),
-                decoration: const InputDecoration(
-                  labelText: "Car Model",
-                  hintText: "Car Model",
-                  enabledBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: TextField(
+                  controller: carModelTextEditingController,
+                  style: const TextStyle(
+                      color: Colors.grey
                   ),
-                  focusedBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
-                  ),
-                  hintStyle: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 10,
-                  ),
-                  labelStyle: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 14,
-                  ),
-                ),
-              ),
-
-              TextField(
-                controller: carNumberTextEditingController,
-                style: const TextStyle(
-                    color: Colors.grey
-                ),
-                decoration: const InputDecoration(
-                  labelText: "Car Number",
-                  hintText: "Car Number",
-                  enabledBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
-                  ),
-                  focusedBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
-                  ),
-                  hintStyle: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 10,
-                  ),
-                  labelStyle: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 14,
+                  decoration: const InputDecoration(
+                    labelText: "Ambulance Model",
+                    hintText: "Ambulance Model",
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.grey),
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.grey),
+                    ),
+                    hintStyle: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 10,
+                    ),
+                    labelStyle: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 14,
+                    ),
                   ),
                 ),
               ),
 
-              TextField(
-                controller: carColorTextEditingController,
-                style: const TextStyle(
-                    color: Colors.grey
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: TextField(
+                  controller: carNumberTextEditingController,
+                  style: const TextStyle(
+                      color: Colors.grey
+                  ),
+                  decoration: const InputDecoration(
+                    labelText: "Ambulance Number",
+                    hintText: "Ambulance Number",
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.grey),
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.grey),
+                    ),
+                    hintStyle: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 10,
+                    ),
+                    labelStyle: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 14,
+                    ),
+                  ),
                 ),
-                decoration: const InputDecoration(
-                  labelText: "Car Color",
-                  hintText: "Car Color",
-                  enabledBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
+              ),
+
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: TextField(
+                  controller: carColorTextEditingController,
+                  style: const TextStyle(
+                      color: Colors.grey
                   ),
-                  focusedBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
-                  ),
-                  hintStyle: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 10,
-                  ),
-                  labelStyle: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 14,
+                  decoration: const InputDecoration(
+                    labelText: "Ambulance Color",
+                    hintText: "AmbulanceColor",
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.grey),
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.grey),
+                    ),
+                    hintStyle: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 10,
+                    ),
+                    labelStyle: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 14,
+                    ),
                   ),
                 ),
               ),
@@ -151,7 +160,7 @@ class _CarInfoScreenState extends State<CarInfoScreen>
                 iconSize: 26,
                 dropdownColor: Colors.black,
                 hint: const Text(
-                  "Please choose Car Type",
+                  "Please choose Ambulance Type",
                   style: TextStyle(
                     fontSize: 14.0,
                     color: Colors.grey,

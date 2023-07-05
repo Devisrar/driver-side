@@ -8,6 +8,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import '../global/global.dart';
 import '../splashScreen/splash_screen.dart';
 import '../widgets/progress_dialog.dart';
+import 'package:lottie/lottie.dart';
 
 
 class LoginScreen extends StatefulWidget
@@ -102,10 +103,7 @@ class _LoginScreenState extends State<LoginScreen>
 
               const SizedBox(height: 30,),
 
-              Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: Image.asset("images/logo1.png"),
-              ),
+              Lottie.network('https://assets6.lottiefiles.com/packages/lf20_XiFR0gJ2fr.json',height: 250),
 
               const SizedBox(height: 10,),
 
@@ -118,55 +116,54 @@ class _LoginScreenState extends State<LoginScreen>
                 ),
               ),
 
-              TextField(
-                controller: emailTextEditingController,
-                keyboardType: TextInputType.emailAddress,
-                style: const TextStyle(
-                    color: Colors.grey
-                ),
-                decoration: const InputDecoration(
-                  labelText: "Email",
-                  hintText: "Email",
-                  enabledBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: TextField(
+                  controller: emailTextEditingController,
+                  keyboardType: TextInputType.emailAddress,
+                  style: const TextStyle(
+                      color: Colors.grey
                   ),
-                  focusedBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
-                  ),
-                  hintStyle: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 10,
-                  ),
-                  labelStyle: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 14,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Email',
+                    labelStyle: TextStyle(color: Colors.white),
+                    hintText: 'Enter Your Email',
+                    prefixIcon: Icon(Icons.email),
+                    hintStyle: TextStyle(fontSize: 14),
+                    fillColor: Colors.black,
+                    enabledBorder: OutlineInputBorder(
+                      borderSide:
+                      BorderSide(color: Colors.white),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
                   ),
                 ),
               ),
 
-              TextField(
-                controller: passwordTextEditingController,
-                keyboardType: TextInputType.text,
-                obscureText: true,
-                style: const TextStyle(
-                    color: Colors.grey
-                ),
-                decoration: const InputDecoration(
-                  labelText: "Password",
-                  hintText: "Password",
-                  enabledBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: TextField(
+                  controller: passwordTextEditingController,
+                  keyboardType: TextInputType.text,
+                  obscureText: true,
+                  style: const TextStyle(
+                      color: Colors.grey
                   ),
-                  focusedBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
-                  ),
-                  hintStyle: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 10,
-                  ),
-                  labelStyle: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 14,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Password',
+                    hintText: 'Enter Password',
+                    labelStyle: TextStyle(color: Colors.white),
+                    hintStyle: TextStyle(fontSize: 14),
+                    prefixIcon: Icon(Icons.lock),
+                    fillColor: Colors.black,
+                    suffixIcon: Icon(Icons.remove_red_eye),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide:
+                      BorderSide(color: Colors.white),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
                   ),
                 ),
               ),
@@ -179,12 +176,19 @@ class _LoginScreenState extends State<LoginScreen>
                   validateForm();
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.lightGreenAccent,
+                  fixedSize: const Size(150, 40),
+
+                  primary: Colors.white,
+                  shape:RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15), // <-- Radius
+                  ),
+
+
                 ),
                 child: const Text(
                   "Login",
                   style: TextStyle(
-                    color: Colors.black54,
+                    color: Colors.black,
                     fontSize: 18,
                   ),
                 ),
@@ -193,7 +197,7 @@ class _LoginScreenState extends State<LoginScreen>
               TextButton(
                 child: const Text(
                   "Do not have an Account? SignUp Here",
-                  style: TextStyle(color: Colors.grey),
+                  style: TextStyle(color: Colors.white),
                 ),
                 onPressed: ()
                 {
